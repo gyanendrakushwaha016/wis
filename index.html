@@ -1,0 +1,1028 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday, Sonakshi Verma ❤️✨</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Great+Vibes&family=Playfair+Display:ital,wght@0,500;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Ambient Canvas for Floating Petals, Sparkles & Fireworks -->
+    <canvas id="ambientCanvas"></canvas>
+    <canvas id="confettiCanvas"></canvas>
+
+    <!-- Floating Audio Player Bar -->
+    <div class="music-floating-widget" id="musicWidget">
+      <button
+        class="music-toggle-btn"
+        id="musicBtn"
+        aria-label="Toggle Romantic Music"
+      >
+        <div class="music-disc-icon">
+          <span class="music-note-icon">🎵</span>
+        </div>
+        <div class="music-info">
+          <span class="music-title">Romantic Melody</span>
+          <span class="music-status" id="musicStatusText"
+            >Tap to Play Music 💖</span
+          >
+        </div>
+        <div class="sound-wave" id="soundWave">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </button>
+      <!-- Romantic audio element with fallback -->
+      <audio id="bgMusic" loop preload="none">
+        <source
+          src="https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3?filename=romantic-piano-112199.mp3"
+          type="audio/mp3"
+        />
+        <source
+          src="https://assets.mixkit.co/music/preview/mixkit-romantic-dinner-197.mp3"
+          type="audio/mp3"
+        />
+      </audio>
+    </div>
+
+    <!-- Main Container -->
+    <main class="page-wrapper">
+      <!-- ==============================================
+         1. HERO SECTION
+    ============================================== -->
+      <section class="hero-section" id="hero">
+        <div class="hero-floating-decorations">
+          <span class="floating-item heart h1">💖</span>
+          <span class="floating-item heart h2">💕</span>
+          <span class="floating-item heart h3">💗</span>
+          <span class="floating-item heart h4">💓</span>
+          <span class="floating-item sparkle s1">✨</span>
+          <span class="floating-item sparkle s2">⭐</span>
+          <span class="floating-item sparkle s3">✨</span>
+          <span class="floating-item balloon b1">🎈</span>
+          <span class="floating-item balloon b2">🎈</span>
+          <span class="floating-item cat-peek cp1">🐱</span>
+          <span class="floating-item flower f1">🌸</span>
+          <span class="floating-item flower f2">🌷</span>
+        </div>
+
+        <div class="hero-glass-card">
+          <div class="hero-badge">
+            <span class="badge-sparkle">✨</span>
+            <span>A Special Birthday Celebration</span>
+            <span class="badge-sparkle">✨</span>
+          </div>
+
+          <div class="hero-cake-glow">
+            <div class="cake-emoji-wrapper">
+              <span class="glowing-cake">🎂</span>
+              <div class="cake-halo"></div>
+              <div class="floating-cat-hero">
+                <span class="mini-cat">🐱</span>
+                <span class="cat-kiss">💋</span>
+              </div>
+            </div>
+          </div>
+
+          <h1 class="hero-title">
+            Happy Birthday, <br class="mobile-break" />
+            <span class="highlight-name glow-text">Sonakshi Verma</span>
+            <span class="hero-heart-pulse">❤️</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            <span class="date-tag">16 November 2007</span> — The day a beautiful
+            soul came into this world ✨
+          </p>
+
+          <p class="hero-lead">
+            Every star in the sky shone a little brighter the moment you were
+            born, and today the whole world celebrates the wonderful magic that
+            is you.
+          </p>
+
+          <div class="hero-cta-wrapper">
+            <button class="primary-magic-btn" id="openSurpriseBtn">
+              <span class="btn-icon">💝</span>
+              <span class="btn-text">Open Your Surprise</span>
+              <span class="btn-sparkle">✨</span>
+            </button>
+          </div>
+
+          <div class="scroll-prompt" id="scrollPrompt">
+            <span>Scroll to uncover the love</span>
+            <div class="mouse-indicator">
+              <div class="mouse-wheel"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==============================================
+         2. BIRTHDAY COUNTDOWN / SPECIAL DATE SECTION
+    ============================================== -->
+      <section class="special-date-section" id="specialDateSection">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-tag">A Blessed Moment In Time</div>
+            <h2 class="section-title">The Day The Stars Aligned ✨</h2>
+            <p class="section-desc">
+              “A very special date, because someone very special was born.”
+            </p>
+          </div>
+
+          <div class="date-showcase-container">
+            <div class="date-digits-row">
+              <div class="date-box glass-box">
+                <span class="date-number glow-number">16</span>
+                <span class="date-label">November</span>
+              </div>
+              <span class="date-divider">•</span>
+              <div class="date-box glass-box">
+                <span class="date-number glow-number">11</span>
+                <span class="date-label">Month of Joy</span>
+              </div>
+              <span class="date-divider">•</span>
+              <div class="date-box glass-box">
+                <span class="date-number glow-number">2007</span>
+                <span class="date-label">A Star was Born</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Live Journey Counter -->
+          <div class="journey-counter-card glass-card">
+            <h3 class="journey-title">
+              <span>🌸</span> Illuminating the world for <span>🌸</span>
+            </h3>
+            <div class="live-counter-grid" id="journeyCounter">
+              <div class="counter-slot">
+                <span class="counter-val" id="cntYears">--</span>
+                <span class="counter-lbl">Years</span>
+              </div>
+              <div class="counter-slot">
+                <span class="counter-val" id="cntMonths">--</span>
+                <span class="counter-lbl">Months</span>
+              </div>
+              <div class="counter-slot">
+                <span class="counter-val" id="cntDays">--</span>
+                <span class="counter-lbl">Days</span>
+              </div>
+              <div class="counter-slot">
+                <span class="counter-val" id="cntHours">--</span>
+                <span class="counter-lbl">Hours</span>
+              </div>
+              <div class="counter-slot">
+                <span class="counter-val" id="cntMinutes">--</span>
+                <span class="counter-lbl">Minutes</span>
+              </div>
+              <div class="counter-slot">
+                <span class="counter-val" id="cntSeconds">--</span>
+                <span class="counter-lbl">Seconds</span>
+              </div>
+            </div>
+            <p class="counter-quote">
+              Every single second with you makes the universe a kinder, warmer
+              place.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==============================================
+         3. ROMANTIC BIRTHDAY MESSAGE CARD
+    ============================================== -->
+      <section class="romantic-message-section" id="romanticMessageSection">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-tag">Straight From The Heart</div>
+            <h2 class="section-title">A Message For My Favorite Person 💌</h2>
+            <p class="section-desc">
+              Words that barely scratch the surface of how extraordinary you
+              are.
+            </p>
+          </div>
+
+          <div class="letter-card-wrapper">
+            <div class="romantic-parchment-card glass-card">
+              <div class="card-seal-stamp">
+                <span class="wax-seal-icon">🌹</span>
+                <span class="seal-caption">Forever Special</span>
+              </div>
+
+              <div class="card-quote-highlight">
+                “Some dates are just dates, but 16 November is special because
+                it brought you into this world.”
+              </div>
+
+              <div class="handwritten-body">
+                <p class="salutation">My Love Sonakshi Ji,</p>
+
+                <p>
+                  From the gentle grace in your smile to the warmth that
+                  naturally lights up any room you walk into, you are truly one
+                  in eight billion. On this beautiful 16th of November, my heart
+                  wants nothing more than to celebrate every little thing that
+                  makes you the wonderful soul you are.
+                </p>
+
+                <p>
+                  Having you in this world is a reminder of how sweet, tender,
+                  and genuine life can be. You carry a kindness that touches
+                  people deeply, a laugh that is contagious, and a quiet
+                  strength that inspires everyone lucky enough to know you.
+                  Every conversation, every shared smile, and every small memory
+                  with you feels like a cherished treasure.
+                </p>
+
+                <p>
+                  As you step into this new year of your life, I wish you
+                  endless happiness, boundless success in all your dreams,
+                  gentle mornings filled with peace, and days sparkling with
+                  pure joy. May your heart always stay as sweet and pure as it
+                  is today, may you achieve everything your heart desires, and
+                  may that bright, beautiful smile of yours never fade.
+                </p>
+
+                <p class="valediction">
+                  Happy Birthday, Sonakshi. You are cherished beyond words. ❤️
+                </p>
+
+                <div class="signature-line">
+                  <span class="sign-text"
+                    >With all my love & warmest wishes,</span
+                  >
+                  <span class="sign-name">Always Yours ✨</span>
+                </div>
+              </div>
+
+              <div class="parchment-decor-leaves left-leaf">🌸</div>
+              <div class="parchment-decor-leaves right-leaf">🌸</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==============================================
+         4. CUTE CATS GIF SECTION
+    ============================================== -->
+      <section class="cute-cats-section" id="catsSection">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-tag">Pure Serotonin & Hugs</div>
+            <h2 class="section-title">
+              A Little Birthday Cuteness For You 🐱💕
+            </h2>
+            <p class="section-desc">
+              Because Sonakshi deserves the sweetest kittens celebrating her big
+              day!
+            </p>
+          </div>
+
+          <div class="cats-grid">
+            <!-- Card 1: Cat giving flowers -->
+            <div class="cat-card glass-card" data-cat="flowers">
+              <div class="cat-gif-container">
+                <img
+                  src="https://media.giphy.com/media/ICOgUNjpvO0PC/giphy.gif"
+                  alt="Cute cat giving flowers"
+                  class="cat-gif-img"
+                  loading="lazy"
+                />
+                <div class="cat-overlay-sparkle">🌸</div>
+              </div>
+              <div class="cat-content">
+                <h3 class="cat-card-title">Flowers for the Birthday Girl 💐</h3>
+                <p class="cat-card-desc">
+                  Picked the freshest blossoms just to see that sweet smile on
+                  your face!
+                </p>
+                <button class="cat-tap-btn" onclick="celebrateCat(this, '💐')">
+                  Send Hug 🐾
+                </button>
+              </div>
+            </div>
+
+            <!-- Card 2: Cat with heart -->
+            <div class="cat-card glass-card" data-cat="heart">
+              <div class="cat-gif-container">
+                <img
+                  src="https://media.giphy.com/media/BzyTuYCmvSORqs1ABM/giphy.gif"
+                  alt="Cute cat with heart"
+                  class="cat-gif-img"
+                  loading="lazy"
+                />
+                <div class="cat-overlay-sparkle">💖</div>
+              </div>
+              <div class="cat-content">
+                <h3 class="cat-card-title">Holding My Whole Heart 🐱❤️</h3>
+                <p class="cat-card-desc">
+                  This kitty is guarding a big heart full of love and admiration
+                  for you!
+                </p>
+                <button class="cat-tap-btn" onclick="celebrateCat(this, '💖')">
+                  Send Love 🐾
+                </button>
+              </div>
+            </div>
+
+            <!-- Card 3: Cat birthday celebration -->
+            <div class="cat-card glass-card" data-cat="party">
+              <div class="cat-gif-container">
+                <img
+                  src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif"
+                  alt="Cat birthday celebration"
+                  class="cat-gif-img"
+                  loading="lazy"
+                />
+                <div class="cat-overlay-sparkle">🎉</div>
+              </div>
+              <div class="cat-content">
+                <h3 class="cat-card-title">Party Mode Activated! 🥳</h3>
+                <p class="cat-card-desc">
+                  Party hats on, confetti ready! It’s Sonakshi’s special day!
+                </p>
+                <button class="cat-tap-btn" onclick="celebrateCat(this, '🎉')">
+                  Pop Confetti 🐾
+                </button>
+              </div>
+            </div>
+
+            <!-- Card 4: Dancing cat -->
+            <div class="cat-card glass-card" data-cat="dance">
+              <div class="cat-gif-container">
+                <img
+                  src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif"
+                  alt="Dancing cat"
+                  class="cat-gif-img"
+                  loading="lazy"
+                />
+                <div class="cat-overlay-sparkle">💃</div>
+              </div>
+              <div class="cat-content">
+                <h3 class="cat-card-title">Dancing For Joy 🎶</h3>
+                <p class="cat-card-desc">
+                  Busting out the happiest moves because a queen was born today!
+                </p>
+                <button class="cat-tap-btn" onclick="celebrateCat(this, '🎵')">
+                  Dance Along 🐾
+                </button>
+              </div>
+            </div>
+
+            <!-- Card 5: Cat blowing a kiss -->
+            <div class="cat-card glass-card" data-cat="kiss">
+              <div class="cat-gif-container">
+                <img
+                  src="https://media.giphy.com/media/MDJ9IbxxvDUQM/giphy.gif"
+                  alt="Cat blowing a kiss"
+                  class="cat-gif-img"
+                  loading="lazy"
+                />
+                <div class="cat-overlay-sparkle">💋</div>
+              </div>
+              <div class="cat-content">
+                <h3 class="cat-card-title">Blowing Sweet Kisses 😽💋</h3>
+                <p class="cat-card-desc">
+                  Catch this fluttery kitten kiss sent straight to your cheeks!
+                </p>
+                <button class="cat-tap-btn" onclick="celebrateCat(this, '💋')">
+                  Catch Kiss 🐾
+                </button>
+              </div>
+            </div>
+
+            <!-- Card 6: Cute sleeping cat -->
+            <div class="cat-card glass-card" data-cat="sleep">
+              <div class="cat-gif-container">
+                <img
+                  src="https://media.giphy.com/media/Nm8ZPAGOwZUQM/giphy.gif"
+                  alt="Cute sleeping cat"
+                  class="cat-gif-img"
+                  loading="lazy"
+                />
+                <div class="cat-overlay-sparkle">💤</div>
+              </div>
+              <div class="cat-content">
+                <h3 class="cat-card-title">Cozy Dreams & Warmth 🌙</h3>
+                <p class="cat-card-desc">
+                  Wishing you cozy nights, sweet dreams, and peaceful slumbers
+                  always.
+                </p>
+                <button class="cat-tap-btn" onclick="celebrateCat(this, '✨')">
+                  Sweet Dreams 🐾
+                </button>
+              </div>
+            </div>
+
+            <!-- Card 7: Cat holding birthday cake -->
+            <div class="cat-card glass-card" data-cat="cake">
+              <div class="cat-gif-container">
+                <img
+                  src="https://media.giphy.com/media/3o6Zt6KHxJTbXCnSvu/giphy.gif"
+                  alt="Cat holding birthday cake"
+                  class="cat-gif-img"
+                  loading="lazy"
+                />
+                <div class="cat-overlay-sparkle">🎂</div>
+              </div>
+              <div class="cat-content">
+                <h3 class="cat-card-title">Special Kitty Cake Delivery 🎂</h3>
+                <p class="cat-card-desc">
+                  Baked with extra sprinkles of love, laughter, and sweetness!
+                </p>
+                <button class="cat-tap-btn" onclick="celebrateCat(this, '🎂')">
+                  Take A Bite 🐾
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==============================================
+         5. ROMANTIC MEMORIES GALLERY (POLAROID STYLE)
+    ============================================== -->
+      <section class="memories-gallery-section" id="gallerySection">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-tag">Captured In Starlight</div>
+            <h2 class="section-title">Beautiful Memories ✨</h2>
+            <p class="section-desc">
+              Snapshots of sweetness, dreamy skies, and beautiful moments.
+            </p>
+          </div>
+
+          <div class="polaroid-gallery-grid">
+            <!-- Polaroid 1 (Replace src with your personal photo, e.g. "assets/photo1.jpg") -->
+            <div
+              class="polaroid-card"
+              style="--rotation: -2.5deg"
+              onclick="openMemoryModal(1)"
+            >
+              <div class="tape-strip"></div>
+              <div class="photo-frame">
+                <img
+                  src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=600&auto=format&fit=crop&q=80"
+                  alt="Rose garden bloom"
+                  class="polaroid-img"
+                  loading="lazy"
+                />
+                <div class="polaroid-heart-badge">💖</div>
+              </div>
+              <div class="polaroid-caption">
+                <span class="caption-text">Your radiant grace 🌸</span>
+                <span class="caption-date">Pure elegance</span>
+              </div>
+            </div>
+
+            <!-- Polaroid 2 -->
+            <div
+              class="polaroid-card"
+              style="--rotation: 2deg"
+              onclick="openMemoryModal(2)"
+            >
+              <div class="tape-strip"></div>
+              <div class="photo-frame">
+                <img
+                  src="https://images.unsplash.com/photo-1534447677768-be436bb09401?w=600&auto=format&fit=crop&q=80"
+                  alt="Dreamy starry twilight"
+                  class="polaroid-img"
+                  loading="lazy"
+                />
+                <div class="polaroid-heart-badge">✨</div>
+              </div>
+              <div class="polaroid-caption">
+                <span class="caption-text">Dreamy night skies 🌌</span>
+                <span class="caption-date">Under the stars</span>
+              </div>
+            </div>
+
+            <!-- Polaroid 3 -->
+            <div
+              class="polaroid-card"
+              style="--rotation: -1.8deg"
+              onclick="openMemoryModal(3)"
+            >
+              <div class="tape-strip"></div>
+              <div class="photo-frame">
+                <img
+                  src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=600&auto=format&fit=crop&q=80"
+                  alt="Cozy kitten snuggles"
+                  class="polaroid-img"
+                  loading="lazy"
+                />
+                <div class="polaroid-heart-badge">🐱</div>
+              </div>
+              <div class="polaroid-caption">
+                <span class="caption-text">Sweet kitten cuddles 💕</span>
+                <span class="caption-date">Pure softness</span>
+              </div>
+            </div>
+
+            <!-- Polaroid 4 -->
+            <div
+              class="polaroid-card"
+              style="--rotation: 3deg"
+              onclick="openMemoryModal(4)"
+            >
+              <div class="tape-strip"></div>
+              <div class="photo-frame">
+                <img
+                  src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=600&auto=format&fit=crop&q=80"
+                  alt="Blossoms in sunshine"
+                  class="polaroid-img"
+                  loading="lazy"
+                />
+                <div class="polaroid-heart-badge">🌷</div>
+              </div>
+              <div class="polaroid-caption">
+                <span class="caption-text">The prettiest flowers 💐</span>
+                <span class="caption-date">Like your smile</span>
+              </div>
+            </div>
+
+            <!-- Polaroid 5 -->
+            <div
+              class="polaroid-card"
+              style="--rotation: -3deg"
+              onclick="openMemoryModal(5)"
+            >
+              <div class="tape-strip"></div>
+              <div class="photo-frame">
+                <img
+                  src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=600&auto=format&fit=crop&q=80"
+                  alt="Birthday cupcake celebration"
+                  class="polaroid-img"
+                  loading="lazy"
+                />
+                <div class="polaroid-heart-badge">🎂</div>
+              </div>
+              <div class="polaroid-caption">
+                <span class="caption-text">Sweet celebrations 🍰</span>
+                <span class="caption-date">16 November joy</span>
+              </div>
+            </div>
+
+            <!-- Polaroid 6 -->
+            <div
+              class="polaroid-card"
+              style="--rotation: 1.5deg"
+              onclick="openMemoryModal(6)"
+            >
+              <div class="tape-strip"></div>
+              <div class="photo-frame">
+                <img
+                  src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&auto=format&fit=crop&q=80"
+                  alt="Golden sunset beach"
+                  class="polaroid-img"
+                  loading="lazy"
+                />
+                <div class="polaroid-heart-badge">🌅</div>
+              </div>
+              <div class="polaroid-caption">
+                <span class="caption-text">Golden hour warmth ☀️</span>
+                <span class="caption-date">Endless horizons</span>
+              </div>
+            </div>
+          </div>
+
+          <p class="gallery-hint">
+            <span>💡</span>
+            <em
+              >Tip: Click any polaroid to view it up close! Personal photos can
+              easily be dropped in anytime.</em
+            >
+          </p>
+        </div>
+      </section>
+
+      <!-- Memory Lightbox Modal -->
+      <div
+        class="memory-modal"
+        id="memoryModal"
+        onclick="closeMemoryModal(event)"
+      >
+        <div class="modal-polaroid-content" onclick="event.stopPropagation()">
+          <button class="modal-close-btn" onclick="closeMemoryModal(event)">
+            &times;
+          </button>
+          <img src="" alt="Enlarged memory" id="modalImg" class="modal-img" />
+          <div class="modal-caption" id="modalCaption">Memory</div>
+        </div>
+      </div>
+
+      <!-- ==============================================
+         6. LOVE LETTER SECTION 💌
+    ============================================== -->
+      <section class="love-letter-section" id="letterSection">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-tag">A Sealed Confession Of Warmth</div>
+            <h2 class="section-title">You Have a Special Letter 💌</h2>
+            <p class="section-desc">
+              Tap the envelope to break the seal and unfold the message inside.
+            </p>
+          </div>
+
+          <div class="envelope-interactive-stage">
+            <!-- Interactive 3D Envelope Container -->
+            <div class="envelope-3d" id="envelope3d" onclick="toggleEnvelope()">
+              <div class="envelope-back"></div>
+
+              <!-- Letter Sheet That Slides Out -->
+              <div
+                class="letter-sheet"
+                id="letterSheet"
+                onclick="event.stopPropagation()"
+              >
+                <button
+                  class="letter-close-btn"
+                  onclick="toggleEnvelope()"
+                  title="Fold Letter"
+                >
+                  ✕
+                </button>
+                <div class="letter-inner-header">
+                  <span class="mini-rose">🌹</span>
+                  <span class="letter-greeting"
+                    >For Sonakshi, With All My Heart</span
+                  >
+                  <span class="mini-rose">🌹</span>
+                </div>
+                <div class="typewriter-container">
+                  <p id="typedLetterText" class="typed-text"></p>
+                  <span class="type-cursor" id="typeCursor">|</span>
+                </div>
+                <div class="letter-inner-footer">
+                  <span class="letter-sign"
+                    >Forever holding you in highest regard,</span
+                  >
+                  <span class="letter-signature-name"
+                    >Your Biggest Well-Wisher ❤️</span
+                  >
+                </div>
+              </div>
+
+              <!-- Envelope Front & Flap -->
+              <div class="envelope-front"></div>
+              <div class="envelope-flap" id="envelopeFlap"></div>
+              <div class="wax-seal" id="waxSeal">
+                <span class="seal-heart">💖</span>
+                <span class="seal-text">OPEN</span>
+              </div>
+            </div>
+
+            <div class="envelope-instructions" id="envelopePrompt">
+              <span class="pulse-indicator">👉</span> Tap the envelope to open
+              your letter! <span class="pulse-indicator">👈</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==============================================
+         7. INTERACTIVE BIRTHDAY CAKE SECTION 🎂
+    ============================================== -->
+      <section class="cake-interactive-section" id="cakeSection">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-tag">Blow The Candles & Dream Big</div>
+            <h2 class="section-title">Make a Birthday Wish, Sonakshi 🎂✨</h2>
+            <p class="section-desc">
+              Click the glowing candles or tap the button to blow them out and
+              release your wish!
+            </p>
+          </div>
+
+          <div class="cake-stage">
+            <div
+              class="interactive-cake"
+              id="interactiveCake"
+              onclick="blowOutCandles()"
+            >
+              <!-- Candles Row -->
+              <div class="candles-rack">
+                <div class="candle c1">
+                  <div class="flame" id="flame1"></div>
+                  <div class="smoke" id="smoke1"></div>
+                  <div class="wick"></div>
+                  <div class="candle-stick"></div>
+                </div>
+                <div class="candle c2">
+                  <div class="flame" id="flame2"></div>
+                  <div class="smoke" id="smoke2"></div>
+                  <div class="wick"></div>
+                  <div class="candle-stick"></div>
+                </div>
+                <div class="candle c3">
+                  <div class="flame" id="flame3"></div>
+                  <div class="smoke" id="smoke3"></div>
+                  <div class="wick"></div>
+                  <div class="candle-stick"></div>
+                </div>
+                <div class="candle c4">
+                  <div class="flame" id="flame4"></div>
+                  <div class="smoke" id="smoke4"></div>
+                  <div class="wick"></div>
+                  <div class="candle-stick"></div>
+                </div>
+                <div class="candle c5">
+                  <div class="flame" id="flame5"></div>
+                  <div class="smoke" id="smoke5"></div>
+                  <div class="wick"></div>
+                  <div class="candle-stick"></div>
+                </div>
+              </div>
+
+              <!-- Cake Tiers -->
+              <div class="cake-tier tier-top">
+                <div class="icing-dripping"></div>
+                <div class="tier-toppings">
+                  <span>🍓</span><span>🌸</span><span>🍓</span><span>🌸</span
+                  ><span>🍓</span>
+                </div>
+              </div>
+              <div class="cake-tier tier-mid">
+                <div class="icing-dripping"></div>
+                <div class="tier-frosting-stripes"></div>
+              </div>
+              <div class="cake-tier tier-bottom">
+                <div class="icing-dripping"></div>
+                <div class="cake-pearls"></div>
+              </div>
+              <div class="cake-plate"></div>
+            </div>
+
+            <!-- Wish Button & Outcome -->
+            <div class="cake-action-area">
+              <button
+                class="wish-action-btn"
+                id="blowCandleBtn"
+                onclick="blowOutCandles()"
+              >
+                <span class="btn-sparkle">🕯️</span>
+                <span>Make a Wish ✨</span>
+                <span class="btn-sparkle">🎂</span>
+              </button>
+
+              <!-- Revealed Wish Banner -->
+              <div class="wish-revealed-banner" id="wishBanner">
+                <div class="banner-sparkles-top">✨ 💖 🎆 💖 ✨</div>
+                <h3 class="wish-title">
+                  “May all your beautiful wishes come true, Sonakshi! ❤️”
+                </h3>
+                <p class="wish-subtitle">
+                  The candles may be blown out, but the light you bring to this
+                  world will never dim!
+                </p>
+                <button class="relight-btn" onclick="relightCandles()">
+                  Relight Candles 🕯️
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==============================================
+         8. SURPRISE GIFT BOX SECTION 🎁
+    ============================================== -->
+      <section class="surprise-box-section" id="surpriseSection">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-tag">Something Wrapped With Care</div>
+            <h2 class="section-title">One More Surprise… 🎁</h2>
+            <p class="section-desc">
+              There’s a little secret tucked inside this magical gift box. Go
+              ahead and open it!
+            </p>
+          </div>
+
+          <div class="gift-box-stage">
+            <div
+              class="interactive-gift-box"
+              id="interactiveGift"
+              onclick="openGiftBox()"
+            >
+              <div class="gift-lid" id="giftLid">
+                <div class="gift-ribbon-bow">
+                  <div class="bow-loop left-loop"></div>
+                  <div class="bow-knot"></div>
+                  <div class="bow-loop right-loop"></div>
+                </div>
+                <div class="gift-lid-strip"></div>
+              </div>
+              <div class="gift-body">
+                <div class="gift-vertical-ribbon"></div>
+                <div class="gift-horizontal-ribbon"></div>
+                <div class="gift-glow-heart">💝</div>
+              </div>
+              <div class="gift-shadow"></div>
+            </div>
+
+            <div class="gift-prompt" id="giftPrompt">
+              <span>✨ Tap the gift box to unwrap your surprise! ✨</span>
+            </div>
+
+            <!-- Gift Reveal Card -->
+            <div class="gift-revealed-content glass-card" id="giftRevealed">
+              <div class="gift-reveal-cats">
+                <span class="reveal-cat">🐱</span>
+                <span class="reveal-burst">🎉</span>
+                <span class="reveal-cat">😻</span>
+                <span class="reveal-burst">💖</span>
+                <span class="reveal-cat">🐱</span>
+              </div>
+              <h3 class="gift-reveal-title">
+                “You deserve all the happiness in the world. <br />Happy
+                Birthday, Sonakshi! ❤️”
+              </h3>
+              <p class="gift-reveal-text">
+                Never forget how loved, appreciated, and cherished you are. The
+                universe is lucky to have your kindness, your sweet smile, and
+                your beautiful energy. Here’s to a year overflowing with
+                blessings and wondrous adventures!
+              </p>
+
+              <!-- Interactive Little Reasons -->
+              <div class="reasons-pill-container">
+                <span
+                  class="reason-pill"
+                  onclick="
+                    showReason(
+                      '🌟 Your kindness is a superpower that warms everyone.',
+                    )
+                  "
+                  >✨ Why You're Special</span
+                >
+                <span
+                  class="reason-pill"
+                  onclick="
+                    showReason(
+                      '🌸 Your smile can brighten the darkest stormiest days.',
+                    )
+                  "
+                  >💖 Your Smile</span
+                >
+                <span
+                  class="reason-pill"
+                  onclick="
+                    showReason(
+                      '🎯 You are determined, brilliant, and full of grace.',
+                    )
+                  "
+                  >💫 Your Heart</span
+                >
+                <span
+                  class="reason-pill"
+                  onclick="
+                    showReason(
+                      '🦋 You inspire happiness simply by being yourself.',
+                    )
+                  "
+                  >🌷 Your Presence</span
+                >
+              </div>
+              <div class="reason-display" id="reasonDisplay">
+                Tap any pill above for a sweet note! 💕
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==============================================
+         9. ROMANTIC TIMELINE SECTION
+    ============================================== -->
+      <section class="timeline-section" id="timelineSection">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-tag">A Beautiful Story</div>
+            <h2 class="section-title">The Story of Someone Wonderful 🌸</h2>
+            <p class="section-desc">
+              From the moment you entered this world to every bright tomorrow.
+            </p>
+          </div>
+
+          <div class="romantic-timeline">
+            <div class="timeline-track"></div>
+
+            <!-- Milestone 1 -->
+            <div class="timeline-item glass-card">
+              <div class="timeline-marker">
+                <span class="marker-icon">🌸</span>
+              </div>
+              <div class="timeline-date">16 November 2007</div>
+              <h3 class="timeline-milestone-title">
+                Someone special was born 🌸
+              </h3>
+              <p class="timeline-milestone-desc">
+                The heavens welcomed a tender new soul, and the world became
+                forever softer, brighter, and infinitely more beautiful.
+              </p>
+            </div>
+
+            <!-- Milestone 2 -->
+            <div class="timeline-item glass-card highlight-timeline">
+              <div class="timeline-marker">
+                <span class="marker-icon">🎂</span>
+              </div>
+              <div class="timeline-date">Today</div>
+              <h3 class="timeline-milestone-title">
+                Someone special is being celebrated 🎂❤️
+              </h3>
+              <p class="timeline-milestone-desc">
+                A celebration of your grace, your laugh, your sweet presence,
+                and all the happiness you bring to those around you every day.
+              </p>
+            </div>
+
+            <!-- Milestone 3 -->
+            <div class="timeline-item glass-card">
+              <div class="timeline-marker">
+                <span class="marker-icon">✨</span>
+              </div>
+              <div class="timeline-date">The Future</div>
+              <h3 class="timeline-milestone-title">
+                Endless Possibilities & Starlight ✨
+              </h3>
+              <p class="timeline-milestone-desc">
+                “May every tomorrow bring you more happiness, smiles, and
+                beautiful memories ✨”
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==============================================
+         10. FINAL BIRTHDAY GRAND FINALE SECTION
+    ============================================== -->
+      <section class="final-section" id="finalSection">
+        <div class="container">
+          <div class="final-glass-card">
+            <div class="final-floating-hearts">
+              <span class="f-heart">💖</span>
+              <span class="f-heart">✨</span>
+              <span class="f-heart">🌸</span>
+              <span class="f-heart">🐱</span>
+              <span class="f-heart">💕</span>
+            </div>
+
+            <div class="final-cake-icon">🎂</div>
+
+            <h2 class="final-title">
+              Happy Birthday, <br class="mobile-break" />
+              <span class="highlight-name glow-text">Sonakshi Verma</span> ❤️🎂
+            </h2>
+
+            <p class="final-quote">
+              “Keep smiling. Keep shining. Keep being the beautiful person you
+              are. ✨”
+            </p>
+
+            <p class="final-wish-p">
+              Thank you for being the wonderful, gentle, and radiant person you
+              are. May this year wrap you in comfort, shower you with success,
+              and bring you all the love you so naturally give to others.
+            </p>
+
+            <div class="final-cta-wrapper">
+              <button
+                class="replay-magic-btn"
+                id="replayBtn"
+                onclick="replaySurprise()"
+              >
+                <span class="btn-icon">💝</span>
+                <span class="btn-text">Replay My Birthday Surprise</span>
+                <span class="btn-sparkle">✨</span>
+              </button>
+            </div>
+
+            <div class="signature-footer">
+              <p>
+                Made with all the love, smiles & care in the world for Sonakshi
+                💕
+              </p>
+              <p class="sub-credit">16 • 11 • 2007 — Forever Cherished 🌹</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Interactive Floating Heart Generator on Click/Touch -->
+    <div id="clickHeartContainer"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
